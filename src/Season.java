@@ -7,6 +7,12 @@ class Season {
     private Date startDate;
     private Date endDate;
 
+    Season(String name, Date startDate, Date endDate) {
+        this.setName(name);
+        this.setStartDate(startDate);
+        this.setEndDate(endDate);
+    }
+
     public ArrayList <Match> getMatchesByDate(Date date){
         return new ArrayList <Match> ();
     }
